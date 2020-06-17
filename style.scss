@@ -1,0 +1,116 @@
+$redColor: #DD5555;
+$white: #fff;
+$firstGrey: #CCCCCC;
+
+/*  BASES */
+body {
+    background: #EBEBEB;
+    font-family: sans-serif;
+    color: #7D7D7D;
+}
+
+a {
+    text-decoration:  none;
+    color: inherit;
+}
+
+p{
+    line-height: 1.7em;
+}
+
+h2 {
+    font-size: 4.5vh;
+    text-align: center;
+}
+
+/*  HEADER */
+header, .reseaux, .movies {
+    background:  $white;
+    width: 40%;
+    height: initial;
+    margin: 4vh auto;
+    padding: 2vh 2vw;
+}
+
+header {
+    text-align: center;
+
+    h1{
+        color: #DD5555;
+        font-size: 6vh;
+    }
+
+    img {
+            border: 1vh solid #D0D0D0;
+            border-radius: 50%;
+            width: 100px;
+        }
+
+    :nth-last-child(2){
+        text-align: justify;
+        text-justify: inter-word;
+        margin: 0.7em 0;
+    }
+
+    a {
+        display: inline-block;
+        background: $redColor;
+        color: $white;
+        font-weight: 600;
+        padding: 0.8em 0.5em;
+        border-radius: 5px;
+        margin-bottom: 1em;
+    }
+
+}
+
+/* Reseaux */
+.reseaux {
+    color: $firstGrey;
+
+    ul{
+        padding: 7vh 0;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        text-align: center;
+
+        li{
+            margin: 0 2vw;
+
+        }
+    }
+
+    .fab{
+        font-size: 1.5rem;
+        margin-bottom: 0.4em;
+    }
+}
+
+/* MOVIES */
+
+.movies {
+    h2 >span{
+        background: #D4D4D4;
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+        margin: 5vh 0;
+            h3 {
+                text-align: center;
+                font-size: 1.1em;
+            }
+
+            img {
+                height: 10vw;
+                padding-right: 2vw;
+            }
+
+            p {
+                text-align: justify;
+                text-justify: inter-character;
+            }
+    }
+}
